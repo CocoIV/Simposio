@@ -1,0 +1,183 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para la sección que contiene el formulario */
+section {
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 100%;
+    min-height: 100vh; /* Altura mínima de la pantalla */
+    background: url("https://i.pinimg.com/originals/a9/5e/ad/a95eadf8fb72efed6eff3a2cd9c97372.jpg"); /* Imagen de fondo */
+    background-position: center; /* Centrar imagen de fondo */
+    background-size: cover; /* Cubrir toda el área */
+}
+
+/* Estilo para el contenedor del formulario */
+.contenedor {
+    position: relative;
+    width: 800px; /* Aumentado para más espacio */
+    border: 2px solid rgba(255, 255, 255, .6); /* Borde semi-transparente */
+    border-radius: 20px; /* Bordes redondeados */
+    backdrop-filter: blur(15px); /* Efecto de desenfoque */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluir padding y borde en las dimensiones */
+}
+
+/* Estilo para el título del formulario */
+.contenedor h2 {
+    font-size: 2.3rem;
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor de las columnas */
+.columnas {
+    display: flex; /* Flexbox para las columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+}
+
+/* Estilo para cada columna */
+.columna {
+    width: 48%;
+}
+
+/* Estilo para los contenedores de entrada */
+.input-contenedor {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    border-bottom: 2px solid #ffffff; /* Línea inferior */
+}
+
+/* Estilo para las etiquetas dentro de los contenedores de entrada */
+.input-contenedor label {
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 5px;
+    transform: translateY(-50%); /* Ajustar para centrar */
+    color: #ffffff;
+    font-size: 1rem;
+    pointer-events: none; /* Deshabilitar eventos */
+    transition: .6s; /* Transición suave */
+    font-weight: bold;
+}
+
+/* Estilo para las etiquetas cuando el input está enfocado o no está vacío */
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label,
+select:focus ~ label,
+select:not([value=""]) ~ label {
+    top: -5px; /* Subir la etiqueta */
+}
+
+/* Estilo para los inputs y selects */
+.input-contenedor input,
+.input-contenedor select {
+    width: 100%;
+    height: 50px;
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    outline: none; /* Sin outline */
+    font-size: 1rem;
+    padding: 0 5px 5px 0; /* Padding interno */
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilo para los íconos dentro de los contenedores de entrada */
+.input-contenedor i {
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;
+}
+
+/* Estilo para los select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /* Remover estilos por defecto */
+    border-bottom: 2px solid #ffffff; /* Línea inferior */
+    color: #fff; /* Texto blanco por defecto */
+}
+
+/* Estilo para el texto dentro del select cuando se selecciona una opción */
+select option {
+    color: black; /* Texto negro para las opciones */
+}
+
+/* Estilo para el contenedor centrado */
+.centrado {
+    display: flex;
+    justify-content: center; /* Centrar contenido */
+}
+
+/* Estilo para la sección de olvidar contraseña */
+.olvidar {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajuste para el input de recordar contraseña */
+.olvidar label input {
+    margin: 3px;
+}
+
+/* Estilo para los enlaces dentro de la sección de olvidar contraseña */
+.olvidar label a {
+    color: #fff;
+    text-decoration: none; /* Remover subrayado */
+    transition: .3s; /* Transición suave */
+    font-size: .9em;
+}
+
+/* Subrayado en el enlace al pasar el mouse */
+.olvidar label a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el botón de registro */
+button {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px; /* Bordes redondeados */
+    background: #fff; /* Fondo blanco */
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Disminuir opacidad al pasar el mouse sobre el botón */
+button:hover {
+    opacity: .9;
+}
+
+/* Estilo para la sección de registrar */
+.Registrar {
+    font-size: .8rem;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+/* Estilo para los enlaces dentro de la sección de registrar */
+.Registrar p a {
+    text-decoration: none; /* Remover subrayado */
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* Subrayado en el enlace al pasar el mouse */
+.Registrar p a:hover {
+    text-decoration: underline;
+}
